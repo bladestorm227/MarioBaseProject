@@ -164,11 +164,6 @@ SDL_Texture* LoadTextureFromFile(string path)
         {
             cout << "Unable to create texture from surface. Error: " << SDL_GetError();
         }
-        else
-        {
-            cout << "Unable to create texture from surface. Error: " << IMG_GetError();
-        }
-
         //remove the loaded surface now that we have a texture
         SDL_FreeSurface(p_surface);
     }
