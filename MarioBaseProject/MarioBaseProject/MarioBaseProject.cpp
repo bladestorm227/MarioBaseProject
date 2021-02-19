@@ -103,12 +103,7 @@ void CloseSDL()
     IMG_Quit();
     SDL_Quit();
 
-    //clear the texture
-    FreeTexture();
-
     //release the renderer
-    SDL_DestroyRenderer(g_renderer);
-    g_renderer = nullptr;
     delete g_texture;
     g_texture = nullptr;
 }
@@ -138,11 +133,6 @@ void Render()
     SDL_SetRenderDrawColor(g_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
     SDL_RenderClear(g_renderer);
 
-    //set where to render the texture
-    SDL_Rect renderLocation = { 0,0,SCREEN_WIDTH, SCREEN_HEIGHT }; 
-
-    //Render to screen
-    SDL_RenderCopyEx(g_renderer, g_texture, NULL, &renderLocation, 0, NULL, SDL_FLIP_NONE);
     g_texture->Render(Vector2D(), SDL_FLIP_NONE);
 
     //update the screen
