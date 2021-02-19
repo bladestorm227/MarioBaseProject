@@ -137,14 +137,10 @@ void Render()
 
     //update the screen
     SDL_RenderPresent(g_renderer);
-<<<<<<< HEAD
 }
 
 SDL_Texture* LoadTextureFromFile(string path)
 {
-    //remove memory used for a previous texture
-    FreeTexture();
-
     SDL_Texture* p_texture = nullptr;
 
     //Load the image
@@ -165,16 +161,4 @@ SDL_Texture* LoadTextureFromFile(string path)
 
     //Return the texture
     return p_texture;
-}
-
-void FreeTexture()
-{
-    //check if texture exists before removing it
-    if (g_texture != nullptr)
-    {
-        SDL_DestroyTexture(g_texture);
-        g_texture = nullptr;
-    }
-=======
->>>>>>> Refactoring
 }
