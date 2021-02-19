@@ -3,15 +3,12 @@
 #include <SDL_mixer.h>
 #include <SDL_image.h>
 #include "constants.h"
-#include "Texture2D.h"
-#include "Commons.h"
 using namespace std;
 
 //Globals
 SDL_Window* g_window = nullptr;
 SDL_Renderer* g_renderer = nullptr;
 SDL_Texture* g_texture = nullptr;
-Texture2D* g_texture = nullptr;
 
 //Function Prototypes
 bool InitSDL();
@@ -90,9 +87,6 @@ bool InitSDL()
     //Load the background texture
     g_texture = LoadTextureFromFile("Images/test.bmp");
     if (g_texture == nullptr)
-    g_texture = new Texture2D(g_renderer);
-
-    if (!g_texture->LoadFromFile("Images/test.bmp"))
     {
         return false;
     }
@@ -114,8 +108,6 @@ void CloseSDL()
     //release the renderer
     SDL_DestroyRenderer(g_renderer);
     g_renderer = nullptr;
-    delete g_texture;
-    g_texture = nullptr;
 }
 
 bool Update()
@@ -148,11 +140,9 @@ void Render()
 
     //Render to screen
     SDL_RenderCopyEx(g_renderer, g_texture, NULL, &renderLocation, 0, NULL, SDL_FLIP_NONE);
-    g_texture->Render(Vector2D(), SDL_FLIP_NONE);
 
     //update the screen
     SDL_RenderPresent(g_renderer);
-<<<<<<< HEAD
 }
 
 SDL_Texture* LoadTextureFromFile(string path)
@@ -190,6 +180,4 @@ void FreeTexture()
         SDL_DestroyTexture(g_texture);
         g_texture = nullptr;
     }
-=======
->>>>>>> Refactoring
 }
