@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _COMMONS_H
+
 
 struct Vector2D
 {
@@ -17,3 +19,4 @@ struct Vector2D
 		y = initial_y;
 	}
 };
+#endif // !_COMMONS_H

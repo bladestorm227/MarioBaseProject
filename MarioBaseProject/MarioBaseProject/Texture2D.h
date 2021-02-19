@@ -1,13 +1,12 @@
-#include <SDL.h>
-#include <string>
-#include "Commons.h"
 #pragma once
 #ifndef _TEXTURE2D_H
 #define _TEXTURE2D_H
-
+#include <SDL.h>
+#include <string>
+#include "Commons.h"
 class Texture2D
 {
-public:
+public :
 	Texture2D(SDL_Renderer* renderer);
 	~Texture2D();
 
