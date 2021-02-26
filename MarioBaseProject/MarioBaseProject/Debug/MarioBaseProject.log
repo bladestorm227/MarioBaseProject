@@ -1,3 +1,3 @@
-﻿  Texture2D.cpp
-D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Texture2D.cpp(67): warning C4715: 'Texture2D::LoadFromFile': not all control paths return a value
+﻿  MarioBaseProject.cpp
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\MarioBaseProject.cpp(93): warning C4715: 'InitSDL': not all control paths return a value
   MarioBaseProject.vcxproj -> D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\Debug\MarioBaseProject.exe

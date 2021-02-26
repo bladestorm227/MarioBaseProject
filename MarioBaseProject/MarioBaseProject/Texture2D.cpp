@@ -30,7 +30,7 @@ void Texture2D::Render(Vector2D new_position, SDL_RendererFlip flip, double angl
 	SDL_Rect renderLocation = { 0,0,m_width, m_height };
 
 	//Render to screen
-	SDL_RenderCopyEx(m_renderer, m_texture, NULL, &renderLocation, 0, NULL, SDL_FLIP_NONE);
+	SDL_RenderCopyEx(m_renderer, m_texture, NULL, &renderLocation, angle, NULL, flip);
 }
 
 bool Texture2D::LoadFromFile(std::string path)
