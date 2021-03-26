@@ -33,3 +33,19 @@ enum FACING
 	FACING_LEFT,
 	FACING_RIGHT
 };
+
+struct Rect2D
+{
+	float x = 0.0f;
+	float y = 0.0f;
+	float width = 0.0f;
+	float height = 0.0f;
+
+	Rect2D(float x_pos, float y_pos, float width, float height)
+	{
+		x = x_pos;
+		y = y_pos;
+		this->width = width;
+		this->height = height;
+	}
+};

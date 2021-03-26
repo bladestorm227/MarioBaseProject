@@ -11,6 +11,7 @@ Character::Character(SDL_Renderer* renderer, std::string imagePath, Vector2D sta
 	m_facing_direction = FACING_RIGHT;
 	m_moving_left = false;
 	m_moving_right = false;
+	m_collision_radius = 15.0f;
 
 	if (!m_texture->LoadFromFile(imagePath))
 	{
@@ -109,4 +110,9 @@ void Character::Jump()
 		m_jumping = true;
 		m_can_jump = false;
 	}
+}
+
+float Character::GetCollisionRadius()
+{
+	return m_collision_radius;
 }
