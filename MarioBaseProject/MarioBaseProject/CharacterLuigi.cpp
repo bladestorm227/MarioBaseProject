@@ -7,36 +7,11 @@
 
 CharacterLuigi::CharacterLuigi(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position) : Character(renderer, imagePath, start_position)
 {
-	m_renderer = renderer;
-	m_position = start_position;
-	m_texture = new Texture2D(renderer);
-	m_facing_direction = FACING_LEFT;
-	m_moving_left = false;
-	m_moving_right = false;
-
-	if (!m_texture->LoadFromFile(imagePath))
-	{
-		std::cout << " Failed to load background texture!" << std::endl;
-	};
 }
 
 CharacterLuigi::~CharacterLuigi()
 {
-	m_renderer = nullptr;
-}
 
-void CharacterLuigi::Render()
-{
-	m_texture->Render(m_position, SDL_FLIP_NONE);
-
-	if (m_facing_direction == FACING_LEFT)
-	{
-		m_texture->Render(m_position, SDL_FLIP_NONE);
-	}
-	else
-	{
-		m_texture->Render(m_position, SDL_FLIP_HORIZONTAL);
-	}
 }
 
 void CharacterLuigi::Update(float deltaTime, SDL_Event e)
@@ -103,49 +78,5 @@ void CharacterLuigi::Update(float deltaTime, SDL_Event e)
 	else if (m_moving_right)
 	{
 		MoveRight(deltaTime);
-	}
-}
-
-void CharacterLuigi::SetPosition(Vector2D new_position)
-{
-	m_position = new_position;
-}
-
-Vector2D CharacterLuigi::GetPosition()
-{
-	return m_position;
-}
-
-void CharacterLuigi::MoveLeft(float deltaTime)
-{
-	m_facing_direction = FACING_LEFT;
-	m_position.x -= deltaTime * MOVEMENTSPEED;
-}
-
-void CharacterLuigi::MoveRight(float deltaTime)
-{
-	m_facing_direction = FACING_RIGHT;
-	m_position.x += deltaTime * MOVEMENTSPEED;
-}
-
-void CharacterLuigi::AddGravity(float deltaTime)
-{
-	if (m_position.y + 64 <= SCREEN_HEIGHT)
-	{
-		m_position.y += GRAVITY * deltaTime;
-	}
-	else
-	{
-		m_can_jump = true;
-	}
-}
-
-void CharacterLuigi::Jump()
-{
-	if (!m_jumping)
-	{
-		m_jump_force = INITIAL_JUMP_FORCE;
-		m_jumping = true;
-		m_can_jump = false;
 	}
 }
