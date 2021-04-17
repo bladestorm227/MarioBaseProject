@@ -35,6 +35,16 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 	my_character_mario->Update(deltaTime, e);
 
 	my_character_luigi->Update(deltaTime, e);
+
+	if (Collisions::Instance()->Circle(my_character_mario, my_character_luigi))
+	{
+		std::cout << "Circle hit!" << std::endl;
+	}
+
+	if (Collisions::Instance()->Box(my_character_mario->GetCollisionBox(), my_character_luigi->GetCollisionBox()))
+	{
+		std::cout << "Box hit!" << std::endl;
+	}
 }
 
 bool GameScreenLevel1::SetUpLevel()
