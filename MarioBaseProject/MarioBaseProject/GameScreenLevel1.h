@@ -6,6 +6,7 @@
 #include "Character.h"
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
+#include "Collisions.h"
 
 class Texture2D;
 class Character;
