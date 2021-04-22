@@ -1,9 +1,24 @@
-﻿  Collisions.cpp
+﻿  Character.cpp
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterLuigi.cpp
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterMario.cpp
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Collisions.cpp
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   GameScreenLevel1.cpp
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameScreenManager.cpp
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(37,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  MarioBaseProject.cpp
   Generating Code...
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\MarioBaseProject.cpp(93): warning C4715: 'InitSDL': not all control paths return a value
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\GameScreenLevel1.cpp(64): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
+  LINK : D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\Debug\MarioBaseProject.exe not found or not built by the last incremental link; performing full link
   MarioBaseProject.vcxproj -> D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\Debug\MarioBaseProject.exe
