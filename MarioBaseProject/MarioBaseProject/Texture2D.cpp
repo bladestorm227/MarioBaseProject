@@ -65,3 +65,8 @@ bool Texture2D::LoadFromFile(std::string path)
         return m_texture != nullptr;
     }
 }
+
+void Texture2D::Render(SDL_Rect src_rect, SDL_Rect src_dest, SDL_RendererFlip flip, double angle)
+{
+    SDL_RenderCopyEx(m_renderer, m_texture, &src_rect, &src_dest, angle, nullptr, flip);
+}

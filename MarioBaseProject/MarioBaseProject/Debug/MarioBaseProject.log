@@ -1,6 +1,7 @@
-﻿  Character.cpp
+﻿  GameScreenLevel1.cpp
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(38,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\Character.h(38,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  LevelMap.cpp
-  Generating Code...
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\PowBlock.h(15,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\PowBlock.h(15,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\MarioBaseProject\GameScreenLevel1.cpp(98): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
   MarioBaseProject.vcxproj -> D:\Games Design and Programming\Games Engine Creation\Semester 2\Repository\MarioBaseProject\MarioBaseProject\Debug\MarioBaseProject.exe
