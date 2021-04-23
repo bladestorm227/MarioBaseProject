@@ -2,6 +2,10 @@
 //screen Dimensions
 #define SCREEN_WIDTH 512
 #define	SCREEN_HEIGHT 416
+#define MAP_HEIGHT 13
+#define MAP_WIDTH 16
+#define TILE_WIDTH 32
+#define TILE_HEIGHT 32
 
 const float MOVEMENTSPEED = 75.0f;
 const float GRAVITY = 260.0F;

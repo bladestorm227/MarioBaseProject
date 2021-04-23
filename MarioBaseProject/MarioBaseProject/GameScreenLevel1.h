@@ -7,6 +7,7 @@
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
 #include "Collisions.h"
+#include "LevelMap.h"
 
 class Texture2D;
 class Character;
@@ -18,9 +19,11 @@ class GameScreenLevel1 : GameScreen
 private:
 	Texture2D* m_background_texture;
 	bool SetUpLevel();
+	void SetLevelMap();
 	Character* my_character;
 	CharacterMario* my_character_mario;
 	CharacterLuigi* my_character_luigi;
+	LevelMap* m_level_map;
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);
