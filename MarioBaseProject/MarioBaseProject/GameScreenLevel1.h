@@ -8,6 +8,8 @@
 #include "CharacterLuigi.h"
 #include "Collisions.h"
 #include "LevelMap.h"
+#include "CharacterKoopa.h"
+#include <vector>
 
 class Texture2D;
 class Character;
@@ -31,6 +33,9 @@ private:
 	float m_wobble;
 	float m_background_yPos;
 	void DoScreenShake();
+	void UpdateEnemies(float deltaTime, SDL_Event e);
+	void CreateKoopa(Vector2D position, FACING direction, float speed);
+	std::vector<CharacterKoopa*> m_enemies;
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);

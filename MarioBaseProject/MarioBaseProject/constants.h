@@ -12,3 +12,5 @@ const float GRAVITY = 260.0F;
 const float JUMP_FORCE_DECREMENT = 400.0f;
 const float INITIAL_JUMP_FORCE = 600.0f;
 const float SHAKE_DURATION = 0.25f;
+const float INJURED_TIME = 2.5f;
+const float KOOPA_SPEED = 96.0f;
